@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'bcs_benwoodregular';
+    src: url('fonts/bcsbenwood-xwwk-webfont.woff2') format('woff2'),
+        url('fonts/bcsbenwood-xwwk-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0px;
+    background-color: #212530;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #272f3a;
+    line-height: 1.5em;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 0.07em;
+}
+
+h1 {
+    margin: auto;
+    padding: 0px;
+    /* adjustment for mobile */
+    padding-top:80px;
+    line-height: 1em;
+    max-width: 94%;
+    text-transform: uppercase;
+    font-size: 90px;
+    font-family: 'bcs_benwoodregular', sans-serif;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 30px 35px 5px 35px;
+    text-align: left;
+}
+
+p {
+    margin: 5px;
+    padding: 10px 30px 10px 30px;
+    text-align: left;
+}
+
+a {
+    text-decoration: none;
+    color: #272f3a;
+    transition: background-color .2s linear;
+}
+
+a.active, ul>li>a:hover {
+    background-color: #d2d7dd;
+}
+
+
+header {
+    padding: 50px 0px 80px 0px;
+}
+
+nav {
+    margin: 0px;
+    padding: 0px;
+    /* student code */
+position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background-color:#d2d7dd;
+}
+
+nav>ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+nav>ul>li {
+    margin: 0px;
+    display: inline-block;
+}
+
+nav>ul>li>a {
+    display: block;
+    margin: auto;
+    padding: 10px 15px;
+    width: fit-content;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: solid 3px transparent;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+main {
+    margin: 0 auto;
+    width: 94%;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.tree {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    max-width: 900px;
+    color: #272f3a;
+    background-color: #d2d7dd;
+    width: 94%;
+}
+
+@media (min-width: 600px) {
+    nav>ul>li {
+        display: inline-block;
+    }
+
+    /*   student code below   */
+  h1{
+    padding-top:0;
+  }
+  nav{
+    position:static;
+    margin:auto;
+    width:fit-content;
+  }
+  i{
+    display:inline-block;
+    vertical-align:bottom;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1100px) {
+    .tree {
+        width: 46%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .tree {
+        width: 30%;
+    }
+}
+.home{
+  background-image:url("images/home.svg");
+}
+.deciduous{
+  background-image:url("images/deciduous.svg");
+}
+.evergreen{
+  background-image:url("images/evergreen.svg");
+}
+i{
+  display:block;
+  margin:auto;
+  width:26px;
+  height:26px;
+  background-size:contain;
+  background-position: top center;
+}
+li:hover{
+  text-decoration:underline;
+  color:black;
+  border: 8px solid green;
+
+}
+.active{
+  text-decoration:underline;
+  text-decoration-color:black;
+  border: 2px solid green;
+}
+nav > ul > li:hover {
+    border-bottom: 3px solid #ff9800;
+    color: #ff9800;
+}
