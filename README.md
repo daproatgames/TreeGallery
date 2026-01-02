@@ -12,7 +12,7 @@ This project has:
 - Image galleries with captions and descriptions for each tree  
 - Custom fonts and icons for a polished look
 
-## Technologies Used
+## Languages Used:
 
 - HTML  
 - CSS (including media queries for responsiveness depending on screen size)  
